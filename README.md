@@ -27,7 +27,7 @@ Para rodar este projeto, você precisa de um servidor local com suporte a PHP (c
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/errisson77/Gerador.curr-culo.git](https://github.com/errisson77/Gerador.curr-culo.git)
+    git clone [https://github.com/errisson77/Gerador.curr-culo.git](https://github.com/erisson77/Gerador.curr-culo.git)
     ```
 2.  **Acesse a pasta:**
     ```bash
