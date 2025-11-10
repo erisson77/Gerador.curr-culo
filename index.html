@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gerador de Currículo</h1>
+        <form action="gerar_pdf.php" method="POST">
+
+            <h2>Dados Pessoais</h2>
+            <input type="text" name="nome" placeholder="Nome Completo" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="telefone" placeholder="Telefone">
+            <input type="text" name="linkedin" placeholder="Perfil LinkedIn (URL)">
+            <textarea name="resumo" placeholder="Resumo Profissional..."></textarea>
+
+            <hr>
+
+            <h2>Experiência Profissional</h2>
+            <div id="experiencias-container">
+                <div class="experiencia-item">
+                    <input type="text" name="cargo[]" placeholder="Cargo">
+                    <input type="text" name="empresa[]" placeholder="Empresa">
+                    <input type="text" name="periodo[]" placeholder="Período (Ex: Jan 2020 - Dez 2022)">
+                </div>
+            </div>
+            <button type="button" id="add-experiencia">Adicionar Experiência</button>
+
+            <hr>
+
+            <h2>Formação Acadêmica</h2>
+            <div id="formacao-container">
+                <div class="formacao-item">
+                    <input type="text" name="curso[]" placeholder="Curso/Formação">
+                    <input type="text" name="instituicao[]" placeholder="Instituição">
+                </div>
+            </div>
+            <button type="button" id="add-formacao">Adicionar Formação</button>
+
+            <hr>
+
+            <button type="submit" class="btn-gerar">Gerar PDF</button>
+
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
